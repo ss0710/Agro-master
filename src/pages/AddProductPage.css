@@ -1,0 +1,212 @@
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #qrcode-canvas, #qrcode-canvas * {
+      visibility: visible;
+    }
+    #qrcode-canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+}
+.addProduct{
+    background: #f6fdfa;
+}
+
+.addCrop-container{
+    margin: 2rem auto;
+    width: 50%;
+    padding: 1rem;
+    background:white !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+
+.addCrop-container h2{
+    font-size: 34px;
+    font-family: 'Roboto';
+    color: #052350;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1.7px solid #ee6e6c;
+    width: fit-content;
+    padding: 0 1.3rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+}
+
+/* .addCrop-form{
+    padding: 2rem 4rem;
+    /* box-shadow: 0 19px 38px rgba(47, 72, 88, .30), 0 15px 12px rgba(47, 72, 88, .22); 
+} */
+
+.cropContainer , .crop-name, .crop-amount{
+    margin: 2rem 0;
+}
+
+.cropContainer label, .crop-name label, .crop-amount label{
+    font-family: 'Roboto' !important;
+    color: #052350 !important;
+}
+
+.cropContainer input, .crop-amount input{
+    padding: .7rem 1rem;
+    width: 90%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1.5px solid #bdc1c0 !important;
+    color: #052350 !important;
+    font-family: 'Nunito' !important;
+}
+
+.cropContainer input:focus, .crop-name input:focus, .crop-amount input:focus{
+    border: 1.5px solid #052350 !important;
+}
+
+.cropContainer .ui.dropdown{
+    border: 1.5px solid #bdc1c0 !important;
+    width: 90% !important;
+}
+
+.crop-descrip textarea{
+    padding: .7rem 1rem;
+    width: 90%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1.5px solid #052350;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #bdc1c0;
+    letter-spacing: 0.8px;
+}
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: #bdc1c0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.submitcrop .cta{
+    padding: 14px 40px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    background: transparent !important;
+    border: 1.3px solid #ee6e6c !important;
+    cursor: pointer !important;
+    color: #ee6e6c !important;
+    border-radius: 5px !important;
+    transition: all 0.3s ease 0s !important;
+    outline: none !important;
+    margin: 0;
+}
+
+.qr-modal canvas {
+    height: 140px !important;
+    width: 140px !important;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Media Queries */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
+    .addCrop-container{
+        width: 98% !important;
+        padding: 2rem 1.7rem;
+    }
+
+
+.cropContainer     , .crop-name, .crop-amount{
+        margin: 2rem auto !important;
+        /* border: 1px solid black; */
+
+    }
+
+
+.cropContainer     input, .crop-name input, .crop-amount input{
+        padding: .7rem 1rem;
+        width: 100%;
+        outline: none;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1.5px solid #bdc1c0 !important;
+        color: #052350 !important;
+        font-family: 'Nunito' !important;
+    }
+
+    .submitcrop{
+        text-align: center;
+    }
+
+  }
+
+/* iPhone 5 (landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+}
+
+/* iPhone 5 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+    .addCrop-container{
+        width: 98% !important;
+        padding: 2rem 1.7rem;
+    }
+
+    .addProduct h2{
+        font-size: 30px;
+    }
+
+
+.cropContainer     , .crop-name, .crop-amount{
+        margin: 2rem auto !important;
+        /* border: 1px solid black; */
+
+    }
+
+
+.cropContainer     label, .crop-name label, .crop-amount label{
+        font-family: 'Roboto' !important;
+        color: #052350 !important;
+        font-size: 14px;
+    }
+
+
+.cropContainer     input, .crop-name input, .crop-amount input{
+        padding: .7rem 1rem;
+        width: 100%;
+        outline: none;
+        font-size: 13px !important;
+        border-radius: 5px;
+        border: 1.5px solid #bdc1c0 !important;
+        color: #052350 !important;
+        font-family: 'Nunito' !important;
+    }
+
+    .submitcrop{
+        text-align: center;
+    }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */        
+    .addCrop-container{
+        width: 93% !important;
+    }
+
+}

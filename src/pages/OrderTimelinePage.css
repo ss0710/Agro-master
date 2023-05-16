@@ -1,0 +1,380 @@
+.btn-search img {
+  transition: transform .25s;
+}
+
+.btn-search:hover > img {
+  transform: scale(1.2);
+}
+
+.btn-search:focus {
+  outline: none;
+}
+
+.search-container{
+  padding: 2rem 0;
+  margin: 2rem 0
+}
+
+.searchbox {
+  height: 40px;
+  width: 450px;
+  max-width: 100%;
+  background: white;
+  color: #2F4858;
+  border-radius: 10px;
+  position: relative;
+  margin: 0;
+  display: flex;
+  left: 35%;
+  border: 1px solid #bdc1c0;
+  font-family: 'Nunito';
+}
+
+.searchbox > .btn-menu {
+  padding: 16px;
+  background: transparent;
+  border: none;
+}
+
+.searchbox > .search {
+  border: none;
+  width: 100%;
+}
+
+.search:focus{
+  outline: none;
+}
+.searchbox > .btn-search {
+  padding: 9px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#search::-webkit-input-placeholder { 
+  color: #bdc1c0;
+  font-family: 'Nunito';
+}
+#search::-moz-placeholder {
+  color: #bdc1c0;
+}
+
+.option{
+  padding: 3.5rem 0 2.5rem 0;
+  font-size: 33px;
+  font-family: 'Roboto';
+  color: #052350;
+  text-align: center;
+  font-weight: 500;
+  margin: auto;
+  letter-spacing: 2px;
+}
+
+.qrCode
+{
+  padding: 9px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.timeline-container h2 {
+  font-size: 41px;
+  font-family: 'Roboto';
+  color: #052350;
+  text-align: center;
+  font-weight: 500;
+  width: fit-content;
+  padding: 0 1.3rem;
+  margin: auto;
+  letter-spacing: 2px;
+}
+
+.timeline-container {
+  height: 100%;
+}
+
+#content {
+  background: #f6fdfa;
+  min-height: 100%;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* Timeline */
+.timeline {
+  /* display: none; */
+  border-left: 4px solid #052350;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #052350;
+  font-family: 'Nunito';
+  font-weight: 600;
+  margin: 3rem auto;
+  left: 20%;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.1em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  max-width: 40%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3 {
+  font-family: 'Roboto';
+  font-weight: 600;
+  /* font-size: 1.4em; */
+  font-size: 25px;
+  color: #052350;
+  margin: 0 0 1rem 0;
+}
+
+.timeline p {
+  margin-bottom: 0.5rem;
+}
+
+.timeline .event {
+  /* border-bottom: 1px dashed #052350; */
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -230px;
+  color: #ee6e6c;
+  content: attr(data-date);
+  letter-spacing: 0.8px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #052350;
+  left: -57.85px;
+  background: #ee6e6c;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+.event .upload-desc {
+  font-size: 0.8em;
+}
+
+.error-timeline {
+  color: #ee6e6c;
+  font-size: 1.35rem;
+  margin-top: 5rem;
+}
+
+/* Media Queries */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .searchbox {
+    height: 50px;
+    width: 350px;
+    color: #052350;
+    left: 7.5%;
+    font-size: 15px;
+  }
+  
+  .timeline-container h2 {
+    font-size: 34px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    margin: 3rem 0rem 3rem auto !important;
+    max-width: 60% !important;
+  }
+
+}
+
+/* iPhone 5 (landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 5 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+  .searchbox {
+    height: 45px;
+    width: 300px;
+    color: #052350;
+    left: 3.3%;
+    font-size: 15px;
+  }
+  
+  .timeline-container h2 {
+    font-size: 25px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    margin: 3rem 0.4rem 3rem auto;
+    max-width: 65%;
+    padding-right: .1em;
+    padding-left: 1.4rem;
+    /* border: 1px solid black; */
+  }
+
+  .timeline h1,
+.timeline h2,
+.timeline h3 {
+  font-family: 'Roboto';
+  font-weight: 600;
+  /* font-size: 1.4em; */
+  font-size: 19px;
+  color: #052350;
+  margin: 0 0 1rem 0;
+  /* border: 1px solid violet; */
+}
+
+.timeline p {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.timeline .event:before {
+  left: -170px;
+  color: #ee6e6c;
+  content: attr(data-date);
+  letter-spacing: 0.8px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #052350;
+  left: -27.85px;
+  background: #ee6e6c;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+}
+
+  /* iPhone 6 (portrait) ----------- */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    /* Styles */
+
+    .searchbox {
+      height: 45px;
+      width: 350px;
+      color: #052350;
+      left: 3.3%;
+      font-size: 15px;
+    }
+    
+    .timeline-container h2 {
+      font-size: 30px;
+    }
+    
+    /* Timeline */
+    .timeline {
+      margin: 3rem 0.4rem 3rem 9.5rem !important;
+      max-width: 65%;
+      padding-right: .1em;
+      padding-left: 1.4em;
+      /* border: 1px solid black; */
+    }
+  
+    .timeline h1,
+  .timeline h2,
+  .timeline h3 {
+    font-family: 'Roboto';
+    font-weight: 600;
+    /* font-size: 1.4em; */
+    font-size: 19px;
+    color: #052350;
+    margin: 0 0 1rem 0;
+    /* border: 1px solid violet; */
+  }
+  
+  .timeline p {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+  }
+  
+  .timeline .event:before {
+    left: -170px;
+    color: #ee6e6c;
+    content: attr(data-date);
+    letter-spacing: 0.8px;
+    text-align: right;
+    font-weight: 500;
+    font-size: 0.9em;
+    min-width: 120px;
+  }
+  
+  .timeline .event:after {
+    box-shadow: 0 0 0 4px #052350;
+    left: -27.85px;
+    background: #ee6e6c;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+  }
+
+  }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */  
+  .searchbox {
+    height: 50px;
+    width: 400px;
+    color: #052350;
+    left: 24%;
+    font-size: 15px;
+  }
+  
+  .timeline-container h2 {
+    font-size: 39px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    margin: 3rem 5.8rem 3rem auto;
+    max-width: 65%;
+  }
+  
+}
